@@ -1,5 +1,17 @@
 # air-quality-gradient-boosting
 An advanced machine learning pipeline comparing XGBoost, LightGBM, and CatBoost to predict Carbon Monoxide levels. Built with Optuna hyperparameter tuning.
+
+## 💾 Dataset Information
+
+The data used in this project consists of extensive atmospheric readings spanning multiple years. Due to GitHub's file size limitations, the raw data files are not hosted in this repository.
+
+* **Data Files Required:** `year_2024.csv` and `year_2025.csv`
+* **Total Scale:** Over 18.4 million rows tracking coordinates, timestamps, and chemical markers.
+* **Target Variable:** `co_column` (Carbon Monoxide concentrations).
+
+### How to access the data:
+Download the source dataset files from [https://www.kaggle.com/datasets/muhammadbilal77511/pakistan-carbon-monoxide-2022-2025].
+
 # Air Quality Prediction: High-Performance Gradient Boosting Architecture
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
