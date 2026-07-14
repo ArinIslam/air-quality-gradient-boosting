@@ -1,7 +1,7 @@
 # air-quality-gradient-boosting
 An advanced machine learning pipeline comparing XGBoost, LightGBM, and CatBoost to predict Carbon Monoxide levels. Built with Optuna hyperparameter tuning.
 
-## 💾 Dataset Information
+## Dataset Information
 
 The data used in this project consists of extensive atmospheric readings spanning multiple years. Due to GitHub's file size limitations, the raw data files are not hosted in this repository.
 
@@ -22,7 +22,7 @@ An advanced, end-to-end machine learning pipeline designed to predict atmospheri
 
 ---
 
-## 🚀 Features & Pipeline
+## Features & Pipeline
 
 * **Massive Data Scale:** Safely handles, merges, and cleans over **18.4 million rows** spanning years 2024 and 2025.
 * **Feature Engineering Matrix:** 
@@ -33,7 +33,7 @@ An advanced, end-to-end machine learning pipeline designed to predict atmospheri
 
 ---
 
-## 📊 Model Evaluation & Benchmarking
+## Model Evaluation & Benchmarking
 
 The initial baseline evaluation highlighted **XGBoost** as the top-performing model. The architectures were compared using Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and the Coefficient of Determination ($R^2$):
 
@@ -44,7 +44,7 @@ The initial baseline evaluation highlighted **XGBoost** as the top-performing mo
 | 3 | CatBoost | 0.002333 | 0.003105 | 0.844056 | 980.73 |
 | 4 | HistGradientBoosting | 0.002549 | 0.003396 | 0.813450 | 371.43 |
 
-### 🛠️ Hyperparameter Tuning (Optuna)
+### Hyperparameter Tuning (Optuna)
 By running a sub-sampled optimization space via Optuna, the optimal parameters for the champion `XGBRegressor` were discovered:
 ```python
 {
